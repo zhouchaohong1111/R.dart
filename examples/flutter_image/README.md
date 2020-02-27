@@ -9,13 +9,12 @@ Have some idea from [**R.swift**](https://github.com/mac-cain13/R.swift) and [**
 1. edit **pubspec.yaml** like below:
 
 ```
-# assets begin
-assets:
-  - assets/image/
-  - assets/file/
-  - assets/icon/
-  - assets/animation/SimpleAnimation/images/
-# assets end
+  # assets begin
+  assets:
+    - assets/animation/SimpleAnimation/images/
+    - assets/image/
+    - assets/file/
+  # assets end
 ```
   
 2. use **r_generator.dart** to generate **r.dart** in folder **generated**, you need copy **tools/r_generator.dart** to your project folder and then excute  
@@ -40,6 +39,7 @@ the file you generate may like:
 ``` dart
 import 'dart:ui';
 
+import 'package:flutter/widgets.dart';
  class R {
   // Generated Colors 
   /// <font color=#000000>#000000</font>
@@ -57,21 +57,17 @@ import 'dart:ui';
   /// assets/animation/SimpleAnimation
   static final String animationSimpleanimation = 'assets/animation/SimpleAnimation';
   
-  // Generated Other Assets 
+  // Generated Images 
+  /// assets/image/camera\_botton.png
+  static AssetImage get imageCameraBotton => const AssetImage('assets/image/camera_botton.png');
+  /// assets/image/gaoyuanyuan.jpeg
+  static AssetImage get imageGaoyuanyuan => const AssetImage('assets/image/gaoyuanyuan.jpeg');
   /// assets/image/google.png
-  /// ![](http://127.0.0.1:2227/assets/image/google.png)
-  static final String imageGoogle = 'assets/image/google.png';
+  static AssetImage get imageGoogle => const AssetImage('assets/image/google.png');
   
+  // Generated Other Assets 
   /// assets/file/listdata.json
   static final String fileListdata = 'assets/file/listdata.json';
-  
-  /// assets/icon/camera\_botton.png
-  /// ![](http://127.0.0.1:2227/assets/icon/camera_botton.png)
-  static final String iconCameraBotton = 'assets/icon/camera_botton.png';
-  
-  /// assets/icon/gaoyuanyuan.jpeg
-  /// ![](http://127.0.0.1:2227/assets/icon/gaoyuanyuan.jpeg)
-  static final String iconGaoyuanyuan = 'assets/icon/gaoyuanyuan.jpeg';
   
 }
 ```
@@ -93,14 +89,14 @@ body: Center(
         // in the middle of the parent.
         child: Column(
           children: <Widget>[
-            Image.asset(R.iconGaoyuanyuan),
+            Image(image: R.imageGaoyuanyuan),
             Container(
               height: 50,
               width: 80,
               color: R.colorOrange,
             ),
-            Image.asset(R.imageGoogle),
-            Image.asset(R.iconCameraBotton),
+            Image(image: R.imageGoogle),
+            Image(image: R.imageCameraBotton),
           ],
         ),
       ),

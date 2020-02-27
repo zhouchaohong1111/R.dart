@@ -47,7 +47,6 @@ flutter:
     - assets/animation/SimpleAnimation/images/
     - assets/image/
     - assets/file/
-
   # assets end
 
   # An image asset can refer to one or more resolution-specific "variants", see
