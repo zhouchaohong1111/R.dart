@@ -28,7 +28,7 @@ GeneratedModel generateColors(String colorJsonPath) {
 //    print('$key : $value');
     resource.add("/// <font color=$value>$value</font>");
 
-    var varName = underlineToCamel(key);
+    var varName = underlineToCamel("color_$key");
     resource.add("static final Color $varName = ${parseColor(value)};");
   });
   resource.add("");
