@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
               filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
               child:
               Container(
-                color: R.yellow.withAlpha(100),
+                color: R.colorYellow.withAlpha(100),
               ),
             )],),
       Image.asset(R.imageGoogle),
