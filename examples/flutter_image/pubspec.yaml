@@ -44,10 +44,10 @@ flutter:
 
   # assets begin
   assets:
+    - assets/animation/SimpleAnimation/images/
     - assets/image/
     - assets/file/
-    - assets/icon/
-    - assets/animation/SimpleAnimation/images/
+
   # assets end
 
   # An image asset can refer to one or more resolution-specific "variants", see

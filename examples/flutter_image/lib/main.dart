@@ -80,14 +80,14 @@ class _MyHomePageState extends State<MyHomePage> {
         // in the middle of the parent.
         child: Column(
           children: <Widget>[
-            Image.asset(R.iconGaoyuanyuan),
+            Image(image: R.imageGaoyuanyuan),
             Container(
               height: 50,
               width: 80,
               color: R.colorOrange,
             ),
-            Image.asset(R.imageGoogle),
-            Image.asset(R.iconCameraBotton),
+            Image(image: R.imageGoogle),
+            Image(image: R.imageCameraBotton),
           ],
         ),
       ),

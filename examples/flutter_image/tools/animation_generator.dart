@@ -14,7 +14,7 @@ GeneratedModel generateAnimations(String animationFolderName) {
   var resource = <String>[];
   var headers = <String>[];
 
-  //自动处理animations文件夹，这个不从配置里生成，直接从子文件夹生成
+  //自动处理animation文件夹，这个不从配置里生成，直接从子文件夹生成
   var animationDir = new Directory(animationFolderName);
   if (animationDir.existsSync()) {
     var list = animationDir.listSync(recursive: false);

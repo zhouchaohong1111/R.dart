@@ -3,6 +3,8 @@ import 'dart:io';
 //the resoures folders
 var assetsFolderName = "assets";
 var animationFolderName = "assets/animation";
+var imageFolderName = "assets/image";
+
 var preview_server_port = 2227;
 
 bool isImage(String subType) {
