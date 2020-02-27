@@ -6,7 +6,7 @@ var animationFolderName = "assets/animation";
 
 bool isImage(String subType) {
   RegExp exp = new RegExp(r"\.?(jpeg|jpg|png|gif|webp)");
-  return exp.hasMatch(subType);
+  return exp.hasMatch(subType.toLowerCase());
 }
 
 /// abc_def to abcDef
