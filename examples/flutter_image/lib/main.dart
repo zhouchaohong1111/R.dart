@@ -79,19 +79,16 @@ class _MyHomePageState extends State<MyHomePage> {
         // in the middle of the parent.
         child: Column(
             children: <Widget>[
-        Stack(
-        children: <Widget>[
-            Image.asset(R.iconGaoyuanyuan),
-            BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-              child:
-              Container(
-                color: R.colorYellow.withAlpha(100),
-              ),
-            )],),
-      Image.asset(R.imageGoogle),
+              Image.asset(R.iconGaoyuanyuan),
 
-      Image.asset(R.iconCameraBotton),
+              Container(
+                height: 50,
+                width: 80,
+                color: R.colorOrange,
+              ),
+              Image.asset(R.imageGoogle),
+
+              Image.asset(R.iconCameraBotton),
       ],
     ),
     ),
