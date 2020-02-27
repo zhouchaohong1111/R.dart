@@ -56,6 +56,7 @@ GeneratedModel generateAssets(List<String> excluedFolders) {
   var resource = <String>[];
   var headers = <String>[];
 
+  resource.add("// Generated Other Assets ");
   for (var line in pubLines) {
     if (line.contains('begin') &&
         line.contains('#') &&

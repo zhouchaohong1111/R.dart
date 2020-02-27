@@ -24,6 +24,7 @@ GeneratedModel generateColors(String colorJsonPath) {
 
   var name = nameFromPathNoAssets(file);
 
+  resource.add("// Generated Colors ");
   obj.forEach((String key, dynamic value) {
 //    print('$key : $value');
     resource.add("/// <font color=$value>$value</font>");

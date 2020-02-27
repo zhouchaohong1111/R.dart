@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+
 import 'generated/r.dart';
 
 void main() => runApp(MyApp());
@@ -78,25 +79,23 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
-            children: <Widget>[
-              Image.asset(R.iconGaoyuanyuan),
-
-              Container(
-                height: 50,
-                width: 80,
-                color: R.colorOrange,
-              ),
-              Image.asset(R.imageGoogle),
-
-              Image.asset(R.iconCameraBotton),
-      ],
-    ),
-    ),
-    floatingActionButton: FloatingActionButton(
-    onPressed: _incrementCounter,
-    tooltip: 'Increment',
-    child: Icon(Icons.add),
-    ), // This trailing comma makes auto-formatting nicer for build methods.
+          children: <Widget>[
+            Image.asset(R.iconGaoyuanyuan),
+            Container(
+              height: 50,
+              width: 80,
+              color: R.colorOrange,
+            ),
+            Image.asset(R.imageGoogle),
+            Image.asset(R.iconCameraBotton),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
-    }
+  }
 }
