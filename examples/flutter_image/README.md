@@ -25,6 +25,16 @@ dart tools/r_generator.dart
 ```  
 you can use parameter **true** or **false** to control start the image preview server.
 
+**You may want to automate this proceture.**
+
+Use **Android Studio** please add configuration r_generator.dart 
+
+![](Documentation/Images/add_r_generator.png)
+
+and then add main configuration depend on it.
+
+![](Documentation/Images/add_main_depend_on.png)
+
 the file you generate may like:
 
 ``` dart
@@ -66,7 +76,12 @@ import 'dart:ui';
 }
 ```
 
-3. import **generated/r.dart** then you can use the assets.
+3. import **generated/r.dart** then you can use the assets. run
+
+``` bash
+dart tools/image_server.dart
+```
+you can preview the image you generated variable refer.
 
 4. if you are using animations like **Lottile**, you do not need the files in the animations folder to generate. you can put all you animations in folder "assets/animations" then the script **r_generator.dart** will automate generate animation names. 
 
