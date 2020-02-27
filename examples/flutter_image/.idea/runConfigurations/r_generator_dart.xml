@@ -1,6 +1,5 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="r_generator.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-    <option name="arguments" value="false" />
     <option name="filePath" value="$PROJECT_DIR$/tools/r_generator.dart" />
     <method v="2" />
   </configuration>

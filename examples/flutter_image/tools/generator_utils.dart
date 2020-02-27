@@ -3,6 +3,7 @@ import 'dart:io';
 //the resoures folders
 var assetsFolderName = "assets";
 var animationFolderName = "assets/animation";
+var preview_server_port = 2227;
 
 bool isImage(String subType) {
   RegExp exp = new RegExp(r"\.?(jpeg|jpg|png|gif|webp)");
