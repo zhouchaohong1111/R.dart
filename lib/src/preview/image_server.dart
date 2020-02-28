@@ -3,7 +3,7 @@
 
 import 'dart:io';
 
-import 'generator_utils.dart';
+import '../generator/generator_utils.dart';
 
 void main() async {
   runImageServer(preview_server_port);

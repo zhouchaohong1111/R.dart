@@ -1,0 +1,8 @@
+builders:
+  r_dart:
+    import: "package:r_dart/builder.dart"
+    builder_factories:
+      - "assetsGenerator"
+    build_extensions: {"$lib$": ["f.dart"]}
+    auto_apply: root_package
+    build_to: cache

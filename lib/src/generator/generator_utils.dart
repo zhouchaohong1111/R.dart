@@ -28,14 +28,8 @@ String underlineToCamel(String varName) {
   return varName;
 }
 
-void writeContentToFile(List<String> resource, List<String> headers,
-    String className, String filename) {
-  var r = new File(filename);
-  if (r.existsSync()) {
-    r.deleteSync();
-  }
-  r.createSync(recursive: true);
-
+String generateContent(List<String> resource, List<String> headers,
+    String className) {
   var content = '';
   for (var line in headers) {
     content = '$content$line\n';
@@ -46,8 +40,22 @@ void writeContentToFile(List<String> resource, List<String> headers,
     content = '$content  $line\n';
   }
   content = '$content}\n';
+  return content;
+}
+
+void writeContentToFile(List<String> resource, List<String> headers,
+    String className, String filename) {
+  var r = new File(filename);
+  if (r.existsSync()) {
+    r.deleteSync();
+  }
+  r.createSync(recursive: true);
+
+  var content = generateContent(resource, headers, className);
   r.writeAsStringSync(content);
 }
+
+
 
 String nameFromPathNoAssets(FileSystemEntity file) {
   var removeHeadPath = file.uri.pathSegments;
