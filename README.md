@@ -5,3 +5,5 @@ Have some idea from [**R.swift**](https://github.com/mac-cain13/R.swift) and [**
 
 Detail infomation to see [THIS](examples/flutter_image/README.md)
 
+The newest version is 0.2.1, please clone this branch to use, the master is always developing.
+
